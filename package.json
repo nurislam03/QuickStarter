@@ -1,0 +1,34 @@
+{
+  "name": "quickstarter",
+  "version": "1.0.0",
+  "description": "quick starter",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurislam03/QuickStarter.git"
+  },
+  "author": "Nur Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nurislam03/QuickStarter/issues"
+  },
+  "homepage": "https://github.com/nurislam03/QuickStarter#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
