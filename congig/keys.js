@@ -1,3 +1,5 @@
-module.exports = {
-  mongoURI: 'mongodb://mongo:27017/quickstarter-mongo'
-};
+if (process.env.NODE_ENV === 'test') {
+  module.exports = require('./keys_test');
+} else {
+  module.exports = require('./keys_dev');
+}
