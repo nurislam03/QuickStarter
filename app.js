@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+// initializing routes
+const users = require('./routes/api/users');
+
 const app = express();
 
 // DB congig
@@ -15,7 +18,10 @@ mongoose
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
-app.get('/', (req, res) => res.send('Hello world!'));
+app.get('/', (req, res) => res.send('Hello world-again!'));
+
+// use Routes
+app.use('/api/users', users);
 
 const port = process.env.PORT || 8082;
 
